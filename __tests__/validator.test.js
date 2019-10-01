@@ -44,7 +44,7 @@ describe('validator module performs basic validation of', () => {
   });
 
   it('functions', () => {
-    let func = function(){'hello'}
+    let func = function(){'hello';};
     let nonFunc = 'hello world';
     expect(validator.isFunction(func)).toBeTruthy();
     expect(validator.isFunction(nonFunc)).toBeFalsy();
